@@ -1,48 +1,3 @@
-
-
-/* .buy {
-    background: #2f303a;
-  } */
-
-/* .info {
-  font-weight: 200;
-  font-size: 36px;
-  line-height: 130%;
-  text-align: center;
-  letter-spacing: 0.03em;
-} */
-
-/* .box {
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #757575;
-} */
-
-/* .map {
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-} */
-
-/* .port-buttons {
-  background-color: var(--background);
-  border-radius: 4px;
-  font-family: var(--roboto);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.port-buttons:hover {
-  background-color: var(--background);
-  color: var(--background);
-} */
-
-
-
 .text-on-projects {
   display: flex;
   justify-content: space-between;
@@ -64,6 +19,7 @@
 }
 
 .cont-overflow {
+  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -82,7 +38,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  background: rgba(33, 150, 243, 0.90);
+  background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 600ms ease-out;
 }
@@ -90,5 +46,3 @@
 .cont-overflow:hover .portfolio-overlay {
   transform: translateY(0);
 }
-
-

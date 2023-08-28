@@ -1,0 +1,29 @@
+
+.clients-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-contacts:last-child {
+    margin: 0;
+  }
+  
+  .clients-cont article {
+    border: 1px solid #AFB1B8;
+  }
+  
+  .clients-cont article:hover {
+    border-color: var(--blue-color);
+  }
+  
+  .clients-cont article svg {
+    box-sizing: content-box;
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
+  }
+  
+  .clients-cont article svg:hover {
+    fill: var(--blue-color);
+  }
