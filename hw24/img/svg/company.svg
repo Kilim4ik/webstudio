@@ -1,4 +1,5 @@
-<svg id="company" width="106" height="60" viewBox="0 0 106 60"  xmlns="http://www.w3.org/2000/svg">
+<svg  width="106" height="60" viewBox="0 0 106 60"  xmlns="http://www.w3.org/2000/svg">
+<symbol id="company">
 <g id="Logo">
 <g id="group">
 <g id="Object">
@@ -18,4 +19,5 @@
 </g>
 </g>
 </g>
+</symbol>
 </svg>
