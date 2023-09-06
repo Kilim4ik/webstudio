@@ -15,25 +15,25 @@
 </head>
 
 <body class="body">
-  <header>
-    <div class="cont">
-      <nav>
+  <header class="header">
+    <div class="cont header__cont">
+      <nav class="nav">
         <a href="/" class="web-studio"><span class="Web">Web</span>Studio</a>
-        <ul class="nav-list">
-          <li><a class="studio main-studio" href="#">Студія</a></li>
-          <li><a class="works" href="./page2.html">Портфоліо</a></li>
-          <li><a class="kontacts" href="#">Контакти</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--line" href="#">Студія</a></li>
+          <li class="nav__item"><a class="nav__link" href="./page2.html">Портфоліо</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a class="email" href="mailto:info@devstudio.com ">
-            <svg class="mail-svg ">
+      <ul class="contacts">
+        <li><a class="contacts__link" href="mailto:info@devstudio.com ">
+            <svg class="contacts__icon--email">
               <use xlink:href="./img/svg/envelope-hover.svg#mail"></use>
             </svg>
             info@devstudio.com
           </a></li>
-        <li><a class="tel" href="tel:+380961111111">
-            <svg class="tel-svg">
+        <li><a class="contacts__link" href="tel:+380961111111">
+            <svg class="contacts__icon--tel">
               <use xlink:href="./img/svg/smartphone.svg#tel"></use>
             </svg> +38 096 111 11 11</a></li>
       </ul>
@@ -41,254 +41,260 @@
   </header>
   <main>
     <section class="hero-section">
-      <div class="cont ">
-        <h1 class="h1">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" type="button" data-modal-open>Замовити послугу</button>
+      <div class="cont hero-section__cont">
+        <h1 class="hero-section__text">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-section__button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="characteristics">
-      <div class="cont">
-        <article>
-          <div class="characteristic-background">
-            <svg>
+      <div class="cont characteristics__cont">
+        <article class="characteristics__card">
+          <div class="characteristics__icon-cont">
+            <svg class="characteristics__icon icon--medium">
               <use xlink:href="./img/svg/antenna.svg#antenna"></use>
             </svg>
           </div>
-          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          <h3 class="characteristics__lable">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="characteristics__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+          </p>
         </article>
-        <article>
-          <div class="characteristic-background">
-            <svg>
+        <article class="characteristics__card">
+          <div class="characteristics__icon-cont">
+            <svg class="characteristics__icon icon--medium">
               <use xlink:href="./img/svg/clock.svg#clock"></use>
             </svg>
           </div>
-          <h3>ПУНКТУАЛЬНІСТЬ</h3>
-          <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+          <h3 class="characteristics__lable">ПУНКТУАЛЬНІСТЬ</h3>
+          <p class="characteristics__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+          </p>
 
         </article>
-        <article>
-          <div class="characteristic-background">
-            <svg>
+        <article class="characteristics__card">
+          <div class="characteristics__icon-cont">
+            <svg class="characteristics__icon icon--medium">
               <use xlink:href="./img/svg/diagram.svg#diagram"></use>
             </svg>
           </div>
-          <h3>ПЛАНУВАННЯ</h3>
-          <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+          <h3 class="characteristics__lable">ПЛАНУВАННЯ</h3>
+          <p class="characteristics__text">Так само консультація з широким активом значною мірою зумовлює.</p>
         </article>
-        <article>
-          <div class="characteristic-background">
-            <svg>
+        <article class="characteristics__card">
+          <div class="characteristics__icon-cont">
+            <svg class="characteristics__icon icon--medium">
               <use xlink:href="./img/svg/astronaut.svg#astronaut"></use>
             </svg>
           </div>
-          <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          <h3 class="characteristics__lable">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p class="characteristics__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+          </p>
 
         </article>
       </div>
     </section>
     <section class="fotos">
-      <div class="cont">
-        <h2 class="robota">Чим ми займаємося</h2>
-        <ul>
-          <li>
+      <div class="cont fotos__cont">
+        <h2 class="fotos__main-text">Чим ми займаємося</h2>
+        <ul class="fotos__list">
+          <li class="fotos__item">
             <img class="foto1" src="./img/box1.jpg" alt="Якийсь екран 1 " width="370" />
-            <p>Десктопні додатки</p>
+            <p class="fotos__text">Десктопні додатки</p>
           </li>
-          <li>
+          <li class="fotos__item">
             <img class="foto2" src="./img/box2.jpg" alt="Якийсь екран 2" width="370" />
-            <p>Мобільні додатки</p>
+            <p class="fotos__text">Мобільні додатки</p>
           </li>
-          <li>
+          <li class="fotos__item">
             <img class="foto3" src="./img/box3.jpg" alt="Якийсь екран 3" width="370" />
-            <p>Дизайнерські рішення</p>
+            <p class="fotos__text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="peoples">
-      <div class="cont">
-        <h2 class="team">Наша команда</h2>
-        <ul>
-          <li class="people">
+      <div class="cont peoples__cont">
+        <h2 class="peoples__text">Наша команда</h2>
+        <ul class="peoples__list">
+          <li class="people-card">
             <img src="./img/card1.jpg" alt="людина 1" width="270" />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
-            <div class="card-contacts">
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+            <h3 class="people-card__name">Ігор Дем'яненко</h3>
+            <p class="people-card__text">Product Designer</p>
+            <div class="people-card__contacts">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/instagram.svg#inst"></use>
                   </svg></a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/twitter.svg#twit"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/facebook.svg#fb"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/linkedin.svg#in"></use>
                   </svg>
                 </a>
               </div>
             </div>
           </li>
-          <li class="people">
+          <li class="people-card">
             <img src="./img/card2.jpg" alt="людина 2 " width="270" />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
-            <div class="card-contacts">
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+            <h3 class="people-card__name">Ольга Рєпіна</h3>
+            <p class="people-card__text">Frontend Developer</p>
+            <div class="people-card__contacts">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/instagram.svg#inst"></use>
                   </svg></a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/twitter.svg#twit"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/facebook.svg#fb"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/linkedin.svg#in"></use>
                   </svg>
                 </a>
               </div>
+            </div>
           </li>
-          <li class="people">
+          <li class="people-card">
             <img src="./img/card3.jpg" alt="людина3" width="270" />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
-            <div class="card-contacts">
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+            <h3 class="people-card__name">Микола Тарасов</h3>
+            <p class="people-card__text">Marketing</p>
+            <div class="people-card__contacts">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/instagram.svg#inst"></use>
                   </svg></a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/twitter.svg#twit"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/facebook.svg#fb"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/linkedin.svg#in"></use>
                   </svg>
                 </a>
               </div>
+            </div>
           </li>
-          <li class="people">
+          <li class="people-card">
             <img src="./img/card4.jpg" alt="людина4" width="270" />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
-            <div class="card-contacts">
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+            <h3 class="people-card__name">Михайло Єрмаков</h3>
+            <p class="people-card__text">UI Designer</p>
+            <div class="people-card__contacts">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger__logo">
                     <use href="./img/svg/instagram.svg#inst"></use>
                   </svg></a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/twitter.svg#twit"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/facebook.svg#fb"></use>
                   </svg>
                 </a>
               </div>
-              <div class="background-contacts">
-                <a href="">
-                  <svg class="internet">
+              <div class="messenger">
+                <a class="people-card__link" href="">
+                  <svg class="messenger-logo">
                     <use href="./img/svg/linkedin.svg#in"></use>
                   </svg>
                 </a>
               </div>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="clients">
-      <div class="cont">
+      <div class="cont ">
         <h2>Постійні клієнти</h2>
-        <div class="cont clients-cont">
-          <article>
+        <div class="cont clients__cont">
+          <article class="clients__item">
             <a href="">
-              <svg>
+              <svg class="clients__icon">
                 <use xlink:href="./img/svg/ya.svg#ya"></use>
               </svg>
             </a>
           </article>
-          <article>
+          <article class="clients__item">
 
-            <svg>
+            <svg class="clients__icon">
               <use xlink:href="./img/svg/tagline.svg#tagline"></use>
             </svg>
 
           </article>
-          <article>
+          <article class="clients__item">
 
-            <svg>
+            <svg class="clients__icon">
               <use xlink:href="./img/svg/company.svg#company"></use>
             </svg>
 
           </article>
-          <article>
+          <article class="clients__item">
 
-            <svg>
+            <svg class="clients__icon">
               <use xlink:href="./img/svg/brand.svg#brand"></use>
             </svg>
 
           </article>
-          <article>
+          <article class="clients__item">
 
-            <svg>
+            <svg class="clients__icon">
               <use xlink:href="./img/svg/brand.svg#brand"></use>
             </svg>
 
           </article>
-          <article>
+          <article class="clients__item">
 
-            <svg>
+            <svg class="clients__icon">
               <use xlink:href="./img/svg/cube.svg#cube"></use>
             </svg>
 
@@ -297,116 +303,110 @@
       </div>
     </section>
   </main>
-  <footer>
-    <article>
+  <footer class="footer">
+    <article class="footer__contacts">
       <a href="/" class="web-studio-"><span class="Web">Web</span>Studio
       </a>
-      <address>
-        <ul>
-          <li>
-            <a class="footer-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+      <address class="address">
+        <ul class="address__list">
+          <li class="address__item">
+            <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
               rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
-          <li class="footer-kontacts"><a class="footer-links" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+          <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
           </li>
-          <li class="footer-kontacts"><a class="footer-links" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </article>
 
     <article class="join">
-      <h3>приєднуйтесь</h3>
-      <ul class="footer-contacts">
-        <li>
-          <div class="background-contacts">
-            <a href="">
-              <svg class="internet">
+      <h3 class="join__title">приєднуйтесь</h3>
+      <ul class="join__contacts">
+        <li class="join__item">
+          <div class="">
+            <a class="messenger messenger--dark" href="">
+              <svg class="messenger__logo messenger__logo--dark">
                 <use href="./img/svg/instagram.svg#inst"></use>
               </svg>
             </a>
           </div>
         </li>
-        <li>
-          <div class="background-contacts">
-            <a href="">
-              <svg class="internet">
-                <use href="./img/svg/twitter.svg#twit"></use>
-              </svg>
-            </a>
-          </div>
+        <li class="join__item">
+          <a class="messenger messenger--dark" href="">
+            <svg class="messenger__logo messenger__logo--dark">
+              <use href="./img/svg/twitter.svg#twit"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <div class="background-contacts">
-            <a href="">
-              <svg class="internet">
-                <use href="./img/svg/facebook.svg#fb"></use>
-              </svg>
-            </a>
-          </div>
+        <li class="join__item">
+          <a class="messenger messenger--dark" href="">
+            <svg class="messenger__logo messenger__logo--dark">
+              <use href="./img/svg/facebook.svg#fb"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <div class="background-contacts">
-            <a href="">
-              <svg class="internet">
-                <use href="./img/svg/linkedin.svg#in"></use>
-              </svg>
-            </a>
-          </div>
+        <li class="join__item">
+          <a class="messenger messenger--dark" href="">
+            <svg class="messenger__logo messenger__logo--dark">
+              <use href="./img/svg/linkedin.svg#in"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </article>
     <article class="footer-form">
-      <h3>Підпишіться на розсилку</h3>
-      <div class="footer-input-box">
-        <input type="text" placeholder="E-mail">
-        <button class="footer-form-button form-button">
+      <h3 class="footer-form__title">Підпишіться на розсилку</h3>
+      <div class="footer-form__cont">
+        <input class="footer-form__input" type="text" placeholder="E-mail">
+        <button class="footer-form__button form-button">
           Підписатися
-          <svg>
+          <svg class="footer-form__icon">
             <use xlink:href="./img/svg/follow.svg#follow"></use>
           </svg>
         </button>
       </div>
     </article>
   </footer>
-  <div class="modal-section is-hidden" data-modal>
+  <div class=" is-hidden modal-section " data-modal>
     <article class="modal-window ">
-      <button class="modal-button-close" data-modal-close>
-        <svg>
+      <button class="modal-window__button-close" data-modal-close>
+        <svg class="modal-window__button-close-icon">
           <use xlink:href="./img/svg/close-button.svg#close-button"></use>
         </svg>
       </button>
-      <h2>Залиште свої дані, ми вам передзвонимо</h2>
+      <h2 class="modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
       <form class="modal-form" action="">
-        <label>Ім'я</label>
+        <label class="modal-form__label">Ім'я</label>
         <div class="input-zone">
-          <svg class="form-icon">
+          <input class="input-zone__input" type="text" placeholder="" required>
+          <svg class="input-zone__icon">
             <use href="./img/svg/people-icon.svg#people-icon"></use>
           </svg>
-          <input class="maodal__input" type="text" placeholder="" required>
         </div>
-        <label>Телефон</label>
+        <label class="modal-form__label">Телефон</label>
         <div class="input-zone">
-          <svg class="form-icon">
+          <input class="input-zone__input" type="tel" required>
+          <svg class="input-zone__icon">
             <use href="./img/svg/tel.svg#tel"></use>
           </svg>
-          <input class="maodal__input" type="tel" required>
         </div>
-        <label>Пошта</label>
+        <label class="modal-form__label">Пошта</label>
         <div class="input-zone">
-          <svg class="form-icon">
+          <input class="input-zone__input" type="mail" required>
+          <svg class="input-zone__icon">
             <use href="./img/svg/envelope-hover.svg#mail"></use>
           </svg>
-          <input class="maodal__input" type="mail" required>
         </div>
-        <label>Коментар</label>
-        <textarea class="maodal__input input-zone  modal-text" name="" id="" cols="57" rows="10"
+        <label class="modal-form__label">Коментар</label>
+        <textarea class=" modal-form__text  " name="" id="" cols="57" rows="10"
           placeholder="Введіть текст" required></textarea>
         <div class="form-checkbox">
-          <input type="checkbox">
-          <p>Погоджуюся з розсилкою та приймаю </p>
-          <a href=""> Умови договору</a>
+          <input class="form-checkbox__checkbox" type="checkbox">
+          <p class="form-checkbox__text">Погоджуюся з розсилкою та приймаю </p>
+          <a class="form-checkbox__link" href=""> Умови договору</a>
         </div>
-        <button class="form-button">Відправити</button>
+        <button class="form-button modal-window__button-send">Відправити</button>
       </form>
     </article>
   </div>

@@ -1,114 +1,70 @@
-header {
+
+.header {
   width: 100%;
-  background-color: var(--background);
+  background-color: $background;
   /* position: fixed;
     bottom: 0; */
+  &__cont {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-header .cont {
-  padding: 25px 0;
-  display: flex;
-  justify-content: space-between;
-}
-nav {
+.nav {
   font-weight: 500;
   font-size: 14px;
   display: flex;
-}
-.nav-list li {
-  position: relative;
-}
 
-header ul {
-  width: 320px;
-  margin-left: 93px;
-  display: flex;
-  justify-content: space-between;
+  &__list {
+    width: 320px;
+    margin-left: 93px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+  }
+  &__link {
+    line-height: 1.14;
+    color: $color-text;
+    text-decoration: none;
+    &:hover {
+      color: $blue-color;
+    }
+    &:focus {
+      color: $blue-color;
+    }
+    &--line::before {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--blue-color);
+      border-radius: 2px;
+    }
+  }
 }
-.studio {
-  line-height: 1.14;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.studio:hover {
-  color: var(--blue-color);
-}
-
-.works {
-  line-height: 1.14;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-.works:focus {
-  color: var(--blue-color);
-}
-
-.works:hover {
-  color: var(--blue-color);
-}
-
-.kontacts {
-  line-height: 1.14;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-.kontacts:focus {
-  color: var(--blue-color);
-}
-
-.kontacts:hover {
-  color: var(--blue-color);
-}
-
-.email {
-  color: var(--light-grey);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.email:hover {
-  color: var(--blue-color);
-}
-
-.main-studio::before,
-.works-portfolio::before {
-  content: " ";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-color);
-  border-radius: 2px;
-}
-
-.mail-svg {
-  width: 16px;
-  height: 12px;
-  stroke: var(--light-grey);
-}
-
-.email:hover .mail-svg use {
-  stroke: var(--blue-color);
-}
-
-.tel {
-  color: var(--light-grey);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.tel:hover {
-  color: var(--blue-color);
-}
-
-.tel-svg {
-  width: 10px;
-  height: 16px;
-}
-
-.tel:hover .tel-svg use {
-  stroke: var(--blue-color);
+.contacts {
+  &__link {
+    color: $light-grey;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover,
+    &:hover use {
+      color: $blue-color;
+      fill: $blue-color ;
+      // stroke: $blue-color;
+    }
+  }
+  &__icon {
+    &--email {
+      width: 16px;
+      height: 12px;
+    }
+    &--tel {
+      width: 12px;
+      height: 16px;
+    }
+  }
 }

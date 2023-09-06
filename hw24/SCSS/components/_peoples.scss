@@ -1,78 +1,47 @@
 .peoples {
-  background: #f5f4fa;
-  color: var(--light-grey);
+  background: $buttons-grey;
+  color: $light-grey;
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+  }
 }
 
-.peoples .cont {
+.people-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.peoples ul {
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
-}
-
-.team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-}
-
-.people {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--background);
-  /* material shadow v1 */
+  background: $background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+  &__name {
+    margin-top: 30px;
+  }
+  &__text {
+    margin-top: 10px;
+  }
+  &__contacts {
+    width: 210px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
 
-.card-contacts {
-  width: 210px;
-  margin-top: 28px;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-
-.people h3 {
-  margin-top: 30px;
-}
-
-.people p {
-  margin-top: 10px;
-}
-
-.background-contacts {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.background-contacts:hover {
-  background-color: var(--blue-color);
-}
-
-.background-contacts a {
-  height: 20px;
-  padding: 0;
-}
-
-.internet {
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-}
-
-.background-contacts:hover .internet {
-  fill: var(--background);
+  
+  &__link {
+    height: 20px;
+  }
 }
