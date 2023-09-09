@@ -51,7 +51,8 @@
     font-size: 20px;
     letter-spacing: 0.6px;
   }
-  &__button-send{
+  &__button {
+    @include button(200px);
     margin-top: 30px;
   }
 }
@@ -86,7 +87,7 @@
 }
 .input-zone {
   position: relative;
-  display: flex;
+  @extend %basic-flex;
   align-items: center;
   &__icon {
     position: absolute;

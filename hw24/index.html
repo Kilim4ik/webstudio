@@ -35,7 +35,9 @@
         <li><a class="contacts__link" href="tel:+380961111111">
             <svg class="contacts__icon--tel">
               <use xlink:href="./img/svg/smartphone.svg#tel"></use>
-            </svg> +38 096 111 11 11</a></li>
+            </svg>
+            +38 096 111 11 11
+          </a></li>
       </ul>
     </div>
   </header>
@@ -304,69 +306,71 @@
     </section>
   </main>
   <footer class="footer">
-    <article class="footer__contacts">
-      <a href="/" class="web-studio-"><span class="Web">Web</span>Studio
-      </a>
-      <address class="address">
-        <ul class="address__list">
-          <li class="address__item">
-            <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-              rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
-          </li>
-          <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
-    </article>
+    <div class="cont footer__cont">
+      <article class="footer__contacts">
+        <a href="/" class="web-studio-"><span class="Web">Web</span>Studio
+        </a>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </article>
 
-    <article class="join">
-      <h3 class="join__title">приєднуйтесь</h3>
-      <ul class="join__contacts">
-        <li class="join__item">
-          <div class="">
+      <article class="join">
+        <h3 class="join__title">приєднуйтесь</h3>
+        <ul class="join__contacts">
+          <li class="join__item">
+            <div class="">
+              <a class="messenger messenger--dark" href="">
+                <svg class="messenger__logo messenger__logo--dark">
+                  <use href="./img/svg/instagram.svg#inst"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="join__item">
             <a class="messenger messenger--dark" href="">
               <svg class="messenger__logo messenger__logo--dark">
-                <use href="./img/svg/instagram.svg#inst"></use>
+                <use href="./img/svg/twitter.svg#twit"></use>
               </svg>
             </a>
-          </div>
-        </li>
-        <li class="join__item">
-          <a class="messenger messenger--dark" href="">
-            <svg class="messenger__logo messenger__logo--dark">
-              <use href="./img/svg/twitter.svg#twit"></use>
+          </li>
+          <li class="join__item">
+            <a class="messenger messenger--dark" href="">
+              <svg class="messenger__logo messenger__logo--dark">
+                <use href="./img/svg/facebook.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join__item">
+            <a class="messenger messenger--dark" href="">
+              <svg class="messenger__logo messenger__logo--dark">
+                <use href="./img/svg/linkedin.svg#in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <article class="footer-form">
+        <h3 class="footer-form__title">Підпишіться на розсилку</h3>
+        <div class="footer-form__cont">
+          <input class="footer-form__input" type="text" placeholder="E-mail">
+          <button class="footer-form__button form-button">
+            Підписатися
+            <svg class="footer-form__icon">
+              <use xlink:href="./img/svg/follow.svg#follow"></use>
             </svg>
-          </a>
-        </li>
-        <li class="join__item">
-          <a class="messenger messenger--dark" href="">
-            <svg class="messenger__logo messenger__logo--dark">
-              <use href="./img/svg/facebook.svg#fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="join__item">
-          <a class="messenger messenger--dark" href="">
-            <svg class="messenger__logo messenger__logo--dark">
-              <use href="./img/svg/linkedin.svg#in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </article>
-    <article class="footer-form">
-      <h3 class="footer-form__title">Підпишіться на розсилку</h3>
-      <div class="footer-form__cont">
-        <input class="footer-form__input" type="text" placeholder="E-mail">
-        <button class="footer-form__button form-button">
-          Підписатися
-          <svg class="footer-form__icon">
-            <use xlink:href="./img/svg/follow.svg#follow"></use>
-          </svg>
-        </button>
-      </div>
-    </article>
+          </button>
+        </div>
+      </article>
+    </div>
   </footer>
   <div class=" is-hidden modal-section " data-modal>
     <article class="modal-window ">
@@ -399,14 +403,14 @@
           </svg>
         </div>
         <label class="modal-form__label">Коментар</label>
-        <textarea class=" modal-form__text  " name="" id="" cols="57" rows="10"
-          placeholder="Введіть текст" required></textarea>
+        <textarea class=" modal-form__text  " name="" id="" cols="57" rows="10" placeholder="Введіть текст"
+          required></textarea>
         <div class="form-checkbox">
           <input class="form-checkbox__checkbox" type="checkbox">
           <p class="form-checkbox__text">Погоджуюся з розсилкою та приймаю </p>
           <a class="form-checkbox__link" href=""> Умови договору</a>
         </div>
-        <button class="form-button modal-window__button-send">Відправити</button>
+        <button class=" modal-window__button">Відправити</button>
       </form>
     </article>
   </div>

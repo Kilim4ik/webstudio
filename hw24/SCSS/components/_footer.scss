@@ -2,6 +2,9 @@
   display: flex;
   width: 100%;
   background: #2f303a;
+  &__cont{
+    display: flex;
+  }
   article {
     padding: 60px 0;
     &:first-child {
@@ -44,8 +47,7 @@
   }
   &__contacts {
     width: 206px;
-    display: flex;
-    justify-content: space-between;
+    @extend %basic-flex;
   }
   &__item {
     width: 44px;
@@ -77,6 +79,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   &__button {
+    @include button(200px);
     margin-left: 12px;
     display: flex;
     align-items: center;

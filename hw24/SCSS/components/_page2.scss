@@ -1,7 +1,5 @@
 .filter {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @extend %basic-flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -9,20 +7,13 @@
   color: #757575;
 }
 
-.project-card{
-  width: 370px;
-  margin-bottom: 32px;
-  background: $background;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  &:nth-last-child(-n+3){
+.project-card {
+  @extend %portfolio-card;
+  &:nth-last-child(-n + 3) {
     margin: 0;
   }
-  &__list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  &__list {
+    @extend %basic-flex;
   }
   &__overflow-cont {
     height: 294px;
@@ -33,21 +24,6 @@
     }
   }
   &__overlay {
-    color: $background;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.54px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: transform 600ms ease-out;
+    @extend %portfolio-overlay;
   }
 }

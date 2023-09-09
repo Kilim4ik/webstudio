@@ -3,6 +3,8 @@
   --raleway: "Raleway";
 }
 @import "./utils/colors";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./components/global";
 @import "./components/header";

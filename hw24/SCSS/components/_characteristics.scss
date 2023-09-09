@@ -1,7 +1,6 @@
 .characteristics {
   &__cont {
-    display: flex;
-    justify-content: space-between;
+    @extend %basic-flex;
   }
   &__card {
     width: 270px;

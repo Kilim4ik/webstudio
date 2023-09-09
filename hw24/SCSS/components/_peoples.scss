@@ -12,8 +12,7 @@
     line-height: 1.16;
   }
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %basic-flex;
     width: 1170px;
   }
 }
@@ -35,8 +34,7 @@
   &__contacts {
     width: 210px;
     margin-top: 28px;
-    display: flex;
-    justify-content: space-between;
+    @extend %basic-flex;
     padding-bottom: 30px;
   }
 

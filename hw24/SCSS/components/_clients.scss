@@ -1,7 +1,6 @@
 .clients {
   &__cont {
-    display: flex;
-    justify-content: space-between;
+    @extend %basic-flex;
   }
   &__item {
     border: 1px solid #afb1b8;
