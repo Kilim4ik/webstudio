@@ -1,19 +1,19 @@
-.characteristics .cont {
-    display: flex;
-    justify-content: space-between;
+.characteristics {
+  &__cont {
+    @extend %basic-flex;
   }
-  
-  .characteristics article {
+  &__card {
     width: 270px;
   }
-  
-  .characteristic-background {
-    background: #f5f4fa;
+  &__icon-cont {
+    // height: 120px;
+    border-radius: 4px;
+    background: $buttons-grey;
   }
-  
-  .characteristic-background svg {
+  &__icon {
     width: 70px;
     height: 70px;
     padding: 25px 100px;
     box-sizing: content-box;
   }
+}

@@ -1,29 +1,23 @@
-
-.robota {
+.fotos {
+  &__main-text {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-  }
-  
-  .fotos h2 {
     margin: 0 auto 50px;
   }
-  
-  .fotos ul {
-    display: flex;
-    justify-content: space-between;
+  &__list {
+    @extend %basic-flex;
   }
-  
-  .fotos li {
+  &__item {
+    // width: 370px;
     height: 294px;
     position: relative;
   }
-  
-  .fotos li p {
+  &__text {
     text-align: center;
-    color: var(--background);
+    color: $background;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -34,6 +28,7 @@
     bottom: 0;
     padding: 27px 0;
     margin: 0 auto;
-    background: rgba(47, 48, 58, 0.80);
+    background: rgba(47, 48, 58, 0.8);
     flex-shrink: 0;
   }
+}
