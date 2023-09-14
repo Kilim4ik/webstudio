@@ -1,19 +1,16 @@
 :root {
-    --color-text: #212121;
-    --background: #ffffff;
-    --blue-color: #2196F3;
-    --light-grey: #757575;
-    --buttons-grey: #F5F4FA;
-    --roboto: 'Roboto';
-    --raleway: 'Raleway';
-  }
-@import './components/global';
-@import './components/header';
-@import './components/hero-section';
-@import './components/characteristics';
-@import './components/fotos';
-@import './components/peoples';
-@import './components/clients';
-@import './components/footer';
-@import './components/modal';
-@import './components/page2';
+  --roboto: "Roboto";
+  --raleway: "Raleway";
+}
+@import "./utils/colors";
+
+@import "./components/global";
+@import "./components/header";
+@import "./components/hero-section";
+@import "./components/characteristics";
+@import "./components/fotos";
+@import "./components/peoples";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/page2";
