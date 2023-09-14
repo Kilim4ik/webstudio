@@ -185,7 +185,8 @@ a {
 .nav__link:focus {
   color: #2196f3;
 }
-.nav__link--line::before {
+.nav__link--line::after {
+  content: "";
   position: absolute;
   bottom: -25px;
   left: 0;
