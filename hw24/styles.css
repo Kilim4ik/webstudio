@@ -61,6 +61,28 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  border: 1px solid #EEE;
+  margin-bottom: 32px;
+}
+
+.proect:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+.proect:hover {
+  width: 370px;
+  background: var(--background);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.proect h4 {
+  margin-left: 24px;
+  padding-top: 20px;
+}
+
+.proect p {
+  margin-left: 24px;
+  padding-bottom: 20px;
 }
 
 .cont-overflow {
@@ -87,8 +109,185 @@
   transition: transform 600ms ease-out;
 }
 
-.cont-overflow:hover .portfolio-overlay {
+.proect:hover .portfolio-overlay {
   transform: translateY(0);
 }
 
+.modal-section {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.20);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(2);
+}
+
+.modal-window {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: var(--background);
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.modal-window label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  padding-bottom: 4px;
+}
+
+.modal-button-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  background-color: var(--background);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-close svg {
+  height: 18px;
+  width: 18px;
+  fill: var(--color-text);
+}
+
+
+.modal-button-close:hover svg,
+.modal-button-close:hover {
+  background-color: var(--background);
+  fill: var(--blue-color);
+}
+
+.modal-window h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+
+.modal-form {
+  margin: 0 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.modal-form>label {
+  margin-top: 10px;
+}
+
+.modal-form p:first-child {
+  margin-top: 12px;
+}
+
+.input-zone {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.maodal__input:hover {
+  border: 1px solid var(--blue-color);
+}
+
+.maodal__input:focus {
+  border: 1px solid var(--blue-color);
+}
+
+.maodal__input:hover~.form-icon use path {
+  fill: var(--blue-color);
+}
+
+.maodal__input:focus+.form-icon use {
+  fill: var(--blue-color);
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--color-text);
+}
+
+.maodal__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  padding-left: 42px;
+}
+
+.maodal__input:focus {
+  outline: none;
+  /* border: 0px solid beige ; */
+}
+
+.modal-text {
+  padding: 12px 16px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  outline: none;
+}
+
+.form-checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+}
+
+.form-checkbox p {
+  margin-left: 7px;
+}
+
+.form-checkbox a {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  color: var(--blue-color);
+  /* outline: var(--blue-color); */
+  text-decoration: underline;
+}
+
+.form-button {
+  align-self: center;
+  border: none;
+  color: var(--background);
+  width: 200px;
+  height: 50px;
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-section .form-button {
+  margin-top: 30px;
+}
