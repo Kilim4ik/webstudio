@@ -1,0 +1,19 @@
+.characteristics .cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .characteristics article {
+    width: 270px;
+  }
+  
+  .characteristic-background {
+    background: #f5f4fa;
+  }
+  
+  .characteristic-background svg {
+    width: 70px;
+    height: 70px;
+    padding: 25px 100px;
+    box-sizing: content-box;
+  }

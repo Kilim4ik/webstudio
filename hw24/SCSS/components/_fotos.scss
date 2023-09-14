@@ -1,0 +1,39 @@
+
+.robota {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .fotos h2 {
+    margin: 0 auto 50px;
+  }
+  
+  .fotos ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fotos li {
+    height: 294px;
+    position: relative;
+  }
+  
+  .fotos li p {
+    text-align: center;
+    color: var(--background);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 27px 0;
+    margin: 0 auto;
+    background: rgba(47, 48, 58, 0.80);
+    flex-shrink: 0;
+  }
