@@ -20,7 +20,7 @@
     color: $background;
   }
   &__button {
-    @include button(214px);
+    @include button(32px);
     &:hover,
     &:focus {
       background-color: $blue-color;
