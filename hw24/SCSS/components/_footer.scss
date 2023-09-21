@@ -79,7 +79,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   &__button {
-    @include button(200px);
+    @include button(28px);
     margin-left: 12px;
     display: flex;
     align-items: center;

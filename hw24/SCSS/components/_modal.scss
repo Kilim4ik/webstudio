@@ -47,12 +47,12 @@
     }
   }
   &__title {
-    margin-top: 40px;
+    margin: 40px 0 0;
     font-size: 20px;
     letter-spacing: 0.6px;
   }
   &__button {
-    @include button(200px);
+    @include button(52px);
     margin-top: 30px;
   }
 }
