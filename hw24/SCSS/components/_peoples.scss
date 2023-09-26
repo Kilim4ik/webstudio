@@ -6,14 +6,8 @@
     flex-direction: column;
     align-items: center;
   }
-  &__text {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-  }
   &__list {
     @extend %basic-flex;
-    width: 1170px;
   }
 }
 
@@ -25,21 +19,55 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &__image {
+    width: 100%;
+  }
   &__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
     margin-top: 30px;
   }
   &__text {
     margin-top: 10px;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;
   }
   &__contacts {
     width: 210px;
-    margin-top: 28px;
+    margin-top: 16px;
     @extend %basic-flex;
     padding-bottom: 30px;
   }
 
-  
   &__link {
     height: 20px;
+  }
+}
+@media (min-width: 320px) {
+  .peoples {
+    &__list {
+      width: 100%;
+      padding: 0px 15px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .peoples {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .peoples {
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
