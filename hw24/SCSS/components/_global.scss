@@ -4,6 +4,9 @@
   pointer-events: none !important;
   transform: scale(2) !important;
 }
+.no-scroll{
+  overflow: hidden;
+}
 
 * {
   box-sizing: border-box;

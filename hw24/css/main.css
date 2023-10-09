@@ -35,6 +35,10 @@
   transform: scale(2) !important;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -249,44 +253,6 @@ a {
   height: 16px;
 }
 
-.mobile-menu-list {
-  position: relative;
-  z-index: 2;
-}
-.mobile-menu-list__button {
-  display: none;
-}
-.mobile-menu-list__button:checked ~ .mobile-menu-list__line-cont {
-  position: fixed;
-}
-.mobile-menu-list__line-cont {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 40px;
-  height: 40px;
-}
-.mobile-menu-list__line {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #212121;
-}
-.mobile-menu-list .address__link {
-  color: #212121;
-}
-.mobile-menu-list .address__link:hover, .mobile-menu-list .address__link:focus {
-  color: #2196f3;
-}
-.mobile-menu-list .address__link:first-child {
-  margin: 0;
-}
-.js-menu-container {
-  display: none;
-}
-
 @media (min-width: 320px) {
   .nav {
     justify-content: space-between;
@@ -300,8 +266,70 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .mobile-menu-list {
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-menu-list__button {
+    display: none;
+  }
+  .mobile-menu-list__button:checked ~ .mobile-menu-list__line-cont {
+    position: fixed;
+  }
+  .mobile-menu-list__button:checked ~ .mobile-menu-list__line-cont .mobile-menu-list__line:before {
+    transform: translateY(-7px) rotate(0);
+  }
+  .mobile-menu-list__button:checked ~ .mobile-menu-list__line-cont .mobile-menu-list__line:after {
+    transform: translateY(-15px) rotate(90deg);
+  }
+  .mobile-menu-list__button:checked ~ .mobile-menu-list__line-cont .mobile-menu-list__line {
+    transform: rotate(-45deg);
+  }
+  .mobile-menu-list__line-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 40px;
+    right: 23px;
+  }
+  .mobile-menu-list__line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #212121;
+    transition: transform 0.5s ease;
+  }
+  .mobile-menu-list__line:before, .mobile-menu-list__line:after {
+    background-color: #212121;
+    display: block;
+    width: 25px;
+    height: 2px;
+    content: "";
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .mobile-menu-list .address__link {
+    color: #212121;
+  }
+  .mobile-menu-list .address__link:hover, .mobile-menu-list .address__link:focus {
+    color: #2196f3;
+  }
+  .mobile-menu-list .address__link:first-child {
+    margin: 0;
+  }
+  .js-menu-container {
+    display: none;
+  }
   .mobile-menu {
     display: block;
+    height: 100%;
+    max-height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -312,9 +340,11 @@ a {
   }
   .mobile-menu__cont {
     display: flex;
+    max-height: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 48px 40px;
+    padding: 48px 40px;
   }
   .mobile-menu__nav {
     display: flex;
@@ -322,12 +352,46 @@ a {
   }
   .mobile-menu__link {
     color: #212121;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+  .mobile-menu__link:hover {
+    color: #2196f3;
   }
   .mobile-menu .address {
     align-items: start;
   }
   .mobile-menu .address__item {
     margin: 0;
+  }
+  .mobile-menu .address__link {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+  }
+  .mobile-menu .address__link:hover {
+    font-size: 34px;
+  }
+  .mobile-menu .media-list {
+    display: flex;
+  }
+  .mobile-menu .media-list__link {
+    color: #2196f3;
+    border-right: 1px solid #757575;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px; /* 122.222% */
+    letter-spacing: 0.36px;
+  }
+  .mobile-menu .media-list__link:first-child {
+    padding-left: 0;
+  }
+  .mobile-menu .media-list__link:last-child {
+    border: none;
   }
 }
 @media (min-width: 768px) {
