@@ -395,6 +395,10 @@ a {
   }
 }
 @media (min-width: 768px) {
+  .mobile-menu-list,
+  .js-menu-container {
+    display: none;
+  }
   .header__cont {
     justify-content: space-between;
   }

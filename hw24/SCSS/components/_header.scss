@@ -76,7 +76,6 @@
     }
   }
 }
-
 @media (min-width: 320px) {
   .nav {
     justify-content: space-between;
@@ -223,6 +222,10 @@
   }
 }
 @media (min-width: 768px) {
+  .mobile-menu-list,
+  .js-menu-container {
+    display: none;
+  }
   .header {
     &__cont {
       justify-content: space-between;
