@@ -424,8 +424,14 @@ a {
 }
 .hero-section {
   padding: 0;
-  background-image: url(../img/main.png);
-  background-size: cover;
+}
+.hero-section__background {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  max-height: 400px;
+  z-index: -1;
 }
 .hero-section__cont {
   padding: 118px 0px;
@@ -467,13 +473,22 @@ a {
 @media (min-width: 320px) {
   .hero-section__text {
     width: 360px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 900;
     line-height: 42px;
     letter-spacing: 1.56px;
   }
 }
+@media (min-width: 768px) {
+  .hero-section__text {
+    font-size: 26px;
+  }
+}
 @media (min-width: 1200px) {
+  .hero-section__background {
+    height: 100%;
+    max-height: 530px;
+  }
   .hero-section__cont {
     padding: 200px 0;
   }
