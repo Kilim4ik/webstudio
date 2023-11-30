@@ -26,18 +26,53 @@
         </ul>
       </nav>
       <ul class="contacts">
-        <li><a class="contacts__link" href="mailto:info@devstudio.com ">
+        <li>
+          <a class="contacts__link" href="mailto:info@devstudio.com ">
             <svg class="contacts__icon--email">
               <use xlink:href="./img/svg/envelope-hover.svg#mail"></use>
             </svg>
             info@devstudio.com
-          </a></li>
-        <li><a class="contacts__link" href="tel:+380961111111">
+          </a>
+        </li>
+        <li>
+          <a class="contacts__link" href="tel:+380961111111">
             <svg class="contacts__icon--tel">
               <use xlink:href="./img/svg/smartphone.svg#tel"></use>
-            </svg> +38 096 111 11 11</a></li>
+            </svg> +38 096 111 11 11</a>
+        </li>
       </ul>
+      <div class="mobile-menu-list">
+        <input class="mobile-menu-list__button js-open-menu  js-close-menu" type="checkbox" id="mobile-menu">
+        <label class="mobile-menu-list__line-cont" for="mobile-menu">
+          <span class="mobile-menu-list__line">
+
+          </span>
+          <span class="mobile-menu-list__line">
+
+          </span>
+          <span class="mobile-menu-list__line">
+
+          </span>
+        </label>
+      </div>
     </div>
+    <article class="  js-menu-container">
+      <div class="mobile-menu__cont">
+        <div class="mobile-menu__nav">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+          <a class="mobile-menu__link" href="./page2.html">Портфоліо</a>
+          <a class="mobile-menu__link" href="">Контакти</a>
+        </div>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+    </article>
+
   </header>
   <main>
     <section class="card-section">
@@ -73,7 +108,7 @@
           <ul class="project-card-section__list">
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                <img src="./img/port1.jpg" alt="проект">
+                <img class="project-card__image" src="./img/port1.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -84,7 +119,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port2.jpg" alt="проект">
+                <img class="project-card__image" src="./img/port2.jpg" alt="проект"></img>
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -95,7 +130,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port3.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port3.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -106,7 +141,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port4.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port4.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -117,7 +152,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port5.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port5.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -128,7 +163,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port6.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port6.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -139,7 +174,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port7.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port7.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -150,7 +185,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port8.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port8.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -161,7 +196,7 @@
             </li>
             <li class="project-card">
               <div class="project-card__overflow-cont">
-                </img><img src="./img/port9.jpg" alt="проект">
+                </img><img class="project-card__image" src="./img/port9.jpg" alt="проект">
                 <div class="project-card__overlay">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -183,12 +218,14 @@
         <address class="address">
           <ul class="address__list">
             <li class="address__item">
-              <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+              <a class="address__link--light" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                 rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+            <li class="address__item"><a class="address__link--light"
+                href="mailto:info@devstudio.com ">info@devstudio.com</a>
             </li>
-            <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="address__item"><a class="address__link--light" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </article>
@@ -242,6 +279,7 @@
       </article>
     </div>
   </footer>
+  <script src="./mobile-menu.js"></script>
 </body>
 
 </html>

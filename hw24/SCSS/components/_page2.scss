@@ -1,6 +1,6 @@
 .filter {
   @extend %basic-flex;
-  width: 575px;
+  // width: 575px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -21,11 +21,16 @@
 }
 
 .project-card {
-  @extend %portfolio-card;
+  @include portfolio-card(100%);
   &:nth-last-child(-n + 3) {
     margin: 0;
   }
-
+  &__image {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    margin: 0 auto;
+  }
   &-section__list {
     @extend %basic-flex;
   }
@@ -47,5 +52,52 @@
   }
   &__overlay {
     @extend %portfolio-overlay;
+  }
+}
+@media (min-width: 320px) {
+  .filter {
+    justify-content: start;
+    &__button {
+      margin: 15px 8px;
+    }
+  }
+  .project-card {
+    &-section__list {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+}
+@media (min-width: 786px) {
+  .filter {
+    justify-content: center;
+    &__button {
+      margin: 15px 8px;
+    }
+  }
+  .project-card {
+    &-section__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    &__button {
+      margin: 15px 8px;
+    }
+  }
+  .project-card {
+    @include portfolio-card(370px);
+    &__image{
+      width: 370px;
+      
+    }
+    &-section__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

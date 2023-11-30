@@ -4,6 +4,9 @@
   pointer-events: none !important;
   transform: scale(2) !important;
 }
+.no-scroll{
+  overflow: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -17,6 +20,7 @@ body {
   color: $color-text;
   line-height: 1.71;
   font-size: 14px;
+  letter-spacing: 0.48px;
 }
 
 section {
@@ -24,7 +28,7 @@ section {
 }
 
 .cont {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0;
 }
@@ -88,6 +92,29 @@ a {
   color: $color-text;
   align-self: center;
 }
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  width: 232px;
+  &__item {
+    margin-left: 10px;
+  }
+  &__link{
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    color: $color-text;
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
 .messenger {
   width: 44px;
   height: 44px;
@@ -106,4 +133,14 @@ a {
 }
 .messenger__logo--dark {
   fill: $background;
+}
+@media (min-width:320px) {
+  section{
+    padding: 60px 15px;
+  }
+}
+@media (min-width:1200px) {
+  section{
+    padding: 60px 0;
+  }
 }

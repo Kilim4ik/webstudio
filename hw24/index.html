@@ -15,6 +15,7 @@
 </head>
 
 <body class="body">
+
   <header class="header">
     <div class="cont header__cont">
       <nav class="nav">
@@ -39,10 +40,47 @@
             +38 096 111 11 11
           </a></li>
       </ul>
+      <div class="mobile-menu-list">
+        <input class="mobile-menu-list__button js-open-menu  js-close-menu" type="checkbox" id="mobile-menu">
+        <label class="mobile-menu-list__line-cont" for="mobile-menu">
+          <span class="mobile-menu-list__line">
+
+          </span>
+        </label>
+      </div>
     </div>
+    <article class="  js-menu-container">
+      <div class="mobile-menu__cont">
+        <div class="mobile-menu__nav">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+          <a class="mobile-menu__link" href="./page2.html">Портфоліо</a>
+          <a class="mobile-menu__link" href="">Контакти</a>
+        </div>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+            </li>
+            <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+          <div class="media-list">
+            <a class="media-list__link" href="">Instagram</a>
+            <a class="media-list__link" href="">Twitter</a>
+            <a class="media-list__link" href="">Facebook</a>
+            <a class="media-list__link" href="">LinkedIn</a>
+          </div>
+        </address>
+      </div>
+    </article>
+
   </header>
   <main>
     <section class="hero-section">
+      <picture >
+        <source srcset="./img/main-mobile.jpg 1x , ./img/main-mobile@x2.jpg 2x , ./img/main-mobile@x3.jpg 3x" media="(max-width:768px)"  >
+        <source srcset="./img/main-tablet.png 1x , ./img/main-tablet@x2.png 2x , ./img/main-tablet@x3.png 3x" media="(min-width:768px)">
+        <source srcset="./img/main-desktop.jpg 1x , ./img/main-desktop@x2.jpg 2x , ./img/main-desktop@x3.jpg 3x" media="(min-width:1200px)" >
+        <img class="hero-section__background" src="./img/main.png" alt="bg">
+      </picture>
       <div class="cont hero-section__cont">
         <h1 class="hero-section__text">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-section__button" type="button" data-modal-open>Замовити послугу</button>
@@ -98,15 +136,15 @@
         <h2 class="fotos__main-text">Чим ми займаємося</h2>
         <ul class="fotos__list">
           <li class="fotos__item">
-            <img class="foto1" src="./img/box1.jpg" alt="Якийсь екран 1 " width="370" />
+            <img class="foto1" srcset="./img/box1.jpg 1x ,./img/box1@x2.jpg 2x" src="./img/box1.jpg" alt="Якийсь екран 1 " width="370" />
             <p class="fotos__text">Десктопні додатки</p>
           </li>
           <li class="fotos__item">
-            <img class="foto2" src="./img/box2.jpg" alt="Якийсь екран 2" width="370" />
+            <img class="foto2" srcset="./img/box2.jpg 1x ,./img/box2@x2.jpg 2x" src="./img/box2.jpg" alt="Якийсь екран 2" width="370" />
             <p class="fotos__text">Мобільні додатки</p>
           </li>
           <li class="fotos__item">
-            <img class="foto3" src="./img/box3.jpg" alt="Якийсь екран 3" width="370" />
+            <img class="foto3" srcset="./img/box3.jpg 1x ,./img/box3@x2.jpg 2x" src="./img/box3.jpg" alt="Якийсь екран 3" width="370" />
             <p class="fotos__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -117,7 +155,7 @@
         <h2 class="peoples__text">Наша команда</h2>
         <ul class="peoples__list">
           <li class="people-card">
-            <img src="./img/card1.jpg" alt="людина 1" width="270" />
+            <img class="people-card__image" srcset="./img/card1.jpg 1x ,./img/card1@x2.jpg 2x"src="./img/card1.jpg" alt="людина 1" width="270" />
             <h3 class="people-card__name">Ігор Дем'яненко</h3>
             <p class="people-card__text">Product Designer</p>
             <div class="people-card__contacts">
@@ -151,7 +189,7 @@
             </div>
           </li>
           <li class="people-card">
-            <img src="./img/card2.jpg" alt="людина 2 " width="270" />
+            <img class="people-card__image" srcset="./img/card2.jpg 1x ,./img/card2@x2.jpg 2x" src="./img/card2.jpg" alt="людина 2 " width="270" />
             <h3 class="people-card__name">Ольга Рєпіна</h3>
             <p class="people-card__text">Frontend Developer</p>
             <div class="people-card__contacts">
@@ -185,7 +223,7 @@
             </div>
           </li>
           <li class="people-card">
-            <img src="./img/card3.jpg" alt="людина3" width="270" />
+            <img class="people-card__image" srcset="./img/card3.jpg 1x ,./img/card3@x2.jpg 2x" src="./img/card3.jpg" alt="людина3" width="270" />
             <h3 class="people-card__name">Микола Тарасов</h3>
             <p class="people-card__text">Marketing</p>
             <div class="people-card__contacts">
@@ -219,7 +257,7 @@
             </div>
           </li>
           <li class="people-card">
-            <img src="./img/card4.jpg" alt="людина4" width="270" />
+            <img class="people-card__image" srcset="./img/card4.jpg 1x ,./img/card4@x2.jpg 2x" src="./img/card4.jpg" alt="людина4" width="270" />
             <h3 class="people-card__name">Михайло Єрмаков</h3>
             <p class="people-card__text">UI Designer</p>
             <div class="people-card__contacts">
@@ -260,11 +298,9 @@
         <h2>Постійні клієнти</h2>
         <div class="cont clients__cont">
           <article class="clients__item">
-            <a href="">
-              <svg class="clients__icon">
-                <use xlink:href="./img/svg/ya.svg#ya"></use>
-              </svg>
-            </a>
+            <svg class="clients__icon">
+              <use xlink:href="./img/svg/ya.svg#ya"></use>
+            </svg>
           </article>
           <article class="clients__item">
 
@@ -414,6 +450,7 @@
       </form>
     </article>
   </div>
+  <script src="./mobile-menu.js"></script>
   <script src="./modal.js"></script>
 </body>
 

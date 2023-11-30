@@ -1,9 +1,11 @@
 .footer {
-  display: flex;
   width: 100%;
   background: #2f303a;
-  &__cont{
-    display: flex;
+  &__cont {
+    @extend %basic-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   article {
     padding: 60px 0;
@@ -12,35 +14,20 @@
     }
   }
   &__contacts {
-    width: 210px;
+    // width: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     padding-bottom: 30px;
   }
 }
 .address {
-  font-style: normal;
-  width: 230px;
-  &__item {
-    margin-left: 10px;
-  }
-  &__link {
-    font-weight: 500;
-    font-size: 14px;
-    font-style: normal;
+  &__link--light {
     color: rgba(255, 255, 255, 0.6);
-    &:hover,
-    &:focus {
-      color: $blue-color;
-    }
-    &:first-child {
-      margin: 0;
-    }
   }
 }
 .join {
-  margin-left: 70px;
+  // margin-left: 70px;
   &__title {
     margin: 0 0 20px;
     color: $buttons-grey;
@@ -54,17 +41,21 @@
   }
 }
 .footer-form {
-  margin-left: 93px;
+  // margin-left: 93px;
+
   &__title {
     margin: 0 0 20px;
     color: $buttons-grey;
   }
   &__cont {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 570px;
   }
   &__input {
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
